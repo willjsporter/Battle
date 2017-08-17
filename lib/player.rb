@@ -1,6 +1,10 @@
 class Player
 
-$player1 = "Rolando"
-$player2 = "Will"
+# def initialize
+  $hp1 = 100
+  $hp2 = 100
+  $player1
+  $player2
+# end
 
 end
