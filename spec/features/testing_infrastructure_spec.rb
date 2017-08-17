@@ -9,7 +9,7 @@ require_relative '../../app.rb'
 
     scenario "Can enter names and see them on the screen" do
       sign_in_and_play
-      expect(page).to have_content 'Nick'
+      expect(page).to have_content 'Rolando'
       expect(page).to have_content 'Will'
     end
 
