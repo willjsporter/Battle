@@ -2,6 +2,8 @@ require 'rspec'
 require 'capybara'
 require 'capybara/rspec'
 
+require_relative './features/web_helpers'
+
 ENV['RACK_ENV'] = 'test'
 require File.expand_path '../../app.rb', __FILE__
 
