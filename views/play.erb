@@ -1,6 +1,18 @@
 
-<%="Player 1 is #{@player1} / HP: 100"%>
+<%="Player 1 is #{@player1} / HP: #{@hp1}"%>
 
 <br></br>
 
-<%="Player 2 is #{@player2} / HP: 100"%>
+<%="Player 2 is #{@player2} / HP: #{@hp2}"%>
+
+<br></br>
+
+<form action= "/attack" method="post">
+<input type="submit" value="Attack!">
+</form>
+
+<% if session[:display] %>
+<p>-20 HP!</p>
+<p><%= "#{@player2} has been attacked! It's super effective!" %></p>
+<% session[:display] = false %>
+<% end %>
