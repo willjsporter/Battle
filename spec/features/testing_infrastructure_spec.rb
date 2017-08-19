@@ -18,12 +18,6 @@ require_relative '../../app.rb'
       expect(page).to have_content ' / HP: 100'
     end
 
-    scenario "HP can change" do
-      sign_in_and_play
-      click_button("Attack!")
-      expect(page).to have_content ' / HP: 80'
-    end
-
     scenario "Checks if message is properly displayed" do
       sign_in_and_play
       click_button("Attack!")

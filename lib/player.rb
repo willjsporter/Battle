@@ -1,10 +1,14 @@
 class Player
 
-# def initialize
-  $hp1 = 100
-  $hp2 = 100
-  $player1
-  $player2
-# end
+attr_accessor :hp
+attr_reader :name
+  def initialize(name)
+    @hp = 100
+    @name = name
+  end
+
+  def damage
+    @hp-=20
+  end
 
 end
